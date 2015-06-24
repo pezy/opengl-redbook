@@ -1,7 +1,6 @@
-# opengl-redbook
-Example of opengl-redbook
+# The OpenGL® Programming Guide 8th Edition
 
-## Getting Started in [Visual Studio Community 2013](https://www.visualstudio.com/downloads/download-visual-studio-vs).
+Examples of opengl-redbook building in [Visual Studio Community 2013](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
 Install [glew](http://glew.sourceforge.net/) and [freeglut](http://freeglut.sourceforge.net/), you can compile them by yourself, or just use my [compiled version](https://github.com/pezy/opengl-redbook/releases/tag/tools).
 
