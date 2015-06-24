@@ -20,16 +20,18 @@ const GLuint NumVertices = 6;
 
 void init()
 {
+    glClearColor(1.0, 1.0, 1.0, 1.0);   // try glClearColor
+
     glGenVertexArrays(NumVAOs, VAOs);
     glBindVertexArray(VAOs[Triangles]);
 
     GLfloat vertices[NumVertices][2] = {
         { -0.90f, -0.90f },	// Triangle 1
-        { 0.85f, -0.90f },
-        { -0.90f, 0.85f },
-        { 0.90f, -0.85f },	// Triangle 2
-        { 0.90f, 0.90f },
-        { -0.85f, 0.90f }
+        {  0.85f, -0.90f },
+        { -0.90f,  0.85f },
+        {  0.90f, -0.85f },	// Triangle 2
+        {  0.90f,  0.90f },
+        { -0.85f,  0.90f }
     };
 
     glGenBuffers(NumBuffers, Buffers);
@@ -59,7 +61,7 @@ void display()
     glClear(GL_COLOR_BUFFER_BIT);
 
     glBindVertexArray(VAOs[Triangles]);
-    glDrawArrays(GL_TRIANGLES, 0, NumVertices);
+    glDrawArrays(GL_TRIANGLES, 0, NumVertices); // you can try GL_LINES and GL_POINTS.
 
     glFlush();
 }
